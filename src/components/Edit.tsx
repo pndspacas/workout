@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { HiX } from 'react-icons/hi'
 import { v4 as uuidv4 } from 'uuid';
 import { useDashboardContext } from './context';
@@ -6,8 +6,8 @@ import { IoReturnDownBack } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 interface Props {
-    name: any;
-    setName: any;
+    name: string;
+    setName: string;
 
 }
 

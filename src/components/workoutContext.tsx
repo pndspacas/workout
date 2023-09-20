@@ -2,18 +2,18 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 interface Workout {
     id: string;
-    name: string;
+    exercise: string;
+    series: string;
+    repetitions: string;
 }
+
+
 // Define the type for the context value
 type WorkoutContextValue = {
     workouts: Workout[];
     setWorkouts: React.Dispatch<React.SetStateAction<Workout[]>>;
 };
 
-interface Workout {
-    id: string;
-    name: string;
-}
 // Create the context
 export const WorkoutContext = createContext<WorkoutContextValue | undefined>(undefined);
 

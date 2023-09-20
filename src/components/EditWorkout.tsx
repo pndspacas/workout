@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useWorkoutContext } from './workoutContext';
 import { HiX } from 'react-icons/hi';
 import { IoReturnDownBack } from "react-icons/io5";
@@ -15,7 +15,7 @@ const EditWorkout = () => {
 
 
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.preventDefault()
         const newWorkoutObj = { id: uuidv4(), exercise: exercise, series: series, repetitions: repetitions }
         setWorkouts([...workouts, newWorkoutObj])

@@ -1,7 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import { useWorkoutContext } from './workoutContext'
 import { IoReturnDownBack } from 'react-icons/io5'
-import { useEffect } from 'react'
 const Workout = () => {
     const { name } = useParams()
     const { workouts } = useWorkoutContext()
