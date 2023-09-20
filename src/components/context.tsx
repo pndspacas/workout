@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface Workout {
-    id: string | number;
+    id: string;
     name: string;
 }
 // Define the type for the context value

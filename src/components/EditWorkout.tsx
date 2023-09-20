@@ -26,15 +26,15 @@ const EditWorkout = () => {
         console.log(newWorkoutObj)
     }
 
-    const handleExercise = (e) => {
+    const handleExercise = (e: React.ChangeEvent<HTMLInputElement>) => {
         setExercise(e.target.value)
     }
 
-    const handleSeries = (e) => {
+    const handleSeries = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSeries(e.target.value)
     }
 
-    const handleRepetitions = (e) => {
+    const handleRepetitions = (e: React.ChangeEvent<HTMLInputElement>) => {
         setRepetitions(e.target.value)
     }
 

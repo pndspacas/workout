@@ -18,7 +18,7 @@ const Dashboard = () => {
             </div>
             <div className='flex flex-col justify-center items-center'>
 
-                {workouts.map((workout: any) => (
+                {workouts.map((workout) => (
                     <div key={workout.id} className='w-96 flex justify-center items-center mt-2 mb-5'>
                         <div className="p-2 background-color text-white bg-cyan-400 w-72 rounded-xl relative hover:bg-cyan-600">
                             <div className='flex justify-center items-center'>
