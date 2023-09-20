@@ -16,7 +16,7 @@ function App() {
           <WorkoutProvider>
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path='/edit' element={<Edit />} />
+              <Route path='/edit' element={<Edit name={''} setName={''} />} />
               <Route path='/edit-workout/:name' element={<EditWorkout />} />
               <Route path='/workout/:name' element={<Workout />} />
             </Routes>
